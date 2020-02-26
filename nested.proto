@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package demo.nested;
+
+message ComplexMessage {
+    SimpleMessage one_msg = 2;
+    repeated SimpleMessage multiple_msg = 3;
+}
+
+message SimpleMessage {
+    int32 id = 1;
+    string name = 2;
+}
