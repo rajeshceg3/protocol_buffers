@@ -1,0 +1,14 @@
+syntax = "proto3";
+package demo.enum;
+
+message EnumMessage {
+    int32 id = 1;
+    Teams team = 2;
+}
+
+enum Teams {
+    LIVERPOOL = 0;
+    MANCHESTER_UNITED = 1;
+    ARSENAL = 2;
+    REALMADRID = 3;
+}
